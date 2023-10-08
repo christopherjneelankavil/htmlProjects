@@ -1,0 +1,145 @@
+
+/* jupiter.css */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #1d2731, #3a4b6b);
+  color: white;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.hero {
+  text-align: center;
+  padding: 100px 0;
+  background: url('images/newastro.jpeg') center/cover no-repeat;
+}
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+.cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #dd6e42;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.cta:hover {
+  background-color: #a79c86;
+}
+.main-content {
+  padding: 20px;
+}
+.header {
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 20px;
+}
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  text-align: center;
+}
+.navbar a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a:hover {
+  background-color: #3a4b6b;
+  color: white;
+}
+.places-to-visit {
+  margin-top: 20px;
+}
+.place {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.place:nth-child(even) .description {
+  order: 1;
+}
+.place.reverse {
+  flex-direction: row-reverse;
+}
+.places-to-visit img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+.places-to-visit .description {
+  flex: 1;
+}
+.places-to-visit h3 {
+  color: #dd6e42;
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  .navbar a {
+      float: none;
+      width: 100%;
+      text-align: center;
+  }
+  .place {
+      flex-direction: column;
+  }
+  .places-to-visit img {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+}
+/* Add animation styles for elements with the .animate-on-scroll class */
+.animate-on-scroll {
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+/* Fade-out animation when the element is not in view */
+.animate-on-scroll:not(.animated) {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.background{
+  background: url('images/marsBackground.jpg') center/cover no-repeat;;
+}
+
+@font-face{
+  font-family:myfont;
+  src:url(font/Starjedi.ttf)
+}
+@font-face{
+  font-family:font2;
+  src:url(font/Transformers\ Movie.ttf)
+}
+@font-face{
+  font-family:font3;
+  src:url(font/RobotoSlab-VariableFont_wght.ttf)
+}
+h1{
+  font-family: myfont;
+}
+p{
+  font-family: font3;
+}
